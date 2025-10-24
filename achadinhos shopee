@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Achadinhos Shopee — Encontre pelo código</title>
+  <meta name="description" content="Achadinhos Shopee — digite o código da foto e vá direto ao produto na Shopee. Rápido e confiável." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">Achadinhos <span class="accent">Shopee</span></a>
+      <nav class="nav">
+        <a href="#search">Buscar</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+      </nav>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- SEARCH -->
+    <section id="search" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Encontre o produto pelo código</h1>
+          <p class="lead">Digite o código que está na foto do nosso feed e vá direto para a página do produto na Shopee. Rápido, simples e seguro.</p>
+
+          <div class="search-box" role="search" aria-label="Busca por código">
+            <label for="codeInput" class="sr-only">Código do produto</label>
+            <input id="codeInput" type="text" inputmode="numeric" placeholder="Ex: 101" aria-label="Digite o código do produto">
+            <button id="searchBtn" class="btn primary">Buscar produto</button>
+          </div>
+
+          <p id="feedback" class="feedback" aria-live="polite"></p>
+
+          <div class="hero-cta">
+            <a class="btn ghost" id="viewAll" href="#about">Sobre</a>
+          </div>
+        </div>
+
+        <div class="hero-image" aria-hidden="true">
+          <img src="https://images.unsplash.com/photo-1580910051071-1f9e6a7c6d36?auto=format&fit=crop&w=800&q=60" alt="Produtos em promoção">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>Sobre</h2>
+        <p>Achadinhos Shopee reúne ofertas selecionadas e fáceis de acessar. Você vê o código no nosso feed do Instagram, entra no link da bio, digita o código aqui e vai direto para o produto na Shopee. Nosso objetivo é poupar seu tempo e mostrar achados com boa relação custo-benefício.</p>
+        <ul class="highlights">
+          <li>🔒 Simples e confiável — apenas redirecionamos para a Shopee.</li>
+          <li>⚡ Rápido — redirecionamento automático com um clique.</li>
+          <li>📦 Produtos verificados (links diretos para o anúncio).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Quer que eu adicione mais produtos ou tenha algum problema com um link? Me chama no WhatsApp.</p>
+        <p class="muted">Atendimento pelo WhatsApp: <a href="https://wa.me/5521967177512" target="_blank" rel="noopener">+55 21 96717-7512</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Achadinhos Shopee — Não somos afiliados oficiais da Shopee.</p>
+      <nav class="footer-nav">
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- WhatsApp floating button -->
+  <a class="whatsapp-float" href="https://wa.me/5521967177512" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path fill="#fff" d="M20.5 3.5A11.9 11.9 0 0012 0C5.4 0 .1 5.4.1 12c0 2.1.6 4 1.6 5.7L0 24l6.6-1.7A12 12 0 0012 24c6.6 0 12-5.4 12-12 0-1.9-.5-3.7-1.5-5.3zM12 21.7c-1.2 0-2.4-.3-3.5-.8l-.3-.2-3.9 1 1-3.8-.2-.3A8.2 8.2 0 013.3 12 8.7 8.7 0 1112 21.7z"/>
+      <path fill="#25D366" d="M17.6 14.1c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.8.2s-1 .9-1.2 1.1c-.2.2-.4.2-.8.1s-1.5-.5-2.8-1.7c-1-1-1.6-2.3-1.8-2.6-.2-.2 0-.4.1-.6.1-.1.3-.4.4-.6.1-.2.2-.3.3-.5.1-.1 0-.4-.1-.6-.1-.2-.8-1.9-1.1-2.6-.3-.7-.6-.6-.8-.6-.2 0-.4 0-.6 0s-.5.1-.8.4c-.3.3-1 1-1 2.4s1 2.8 1.1 3c.1.2 1.9 3 4.6 4.3 3.1 1.5 3.1 1 3.7 1s1.9.8 2.2 1c.3.2.6.3.7.4.1.1.5.2.9.1.5-.1 1.7-.7 2-1.3.3-.6.3-1.1.2-1.3-.1-.2-.3-.3-.6-.5z"/>
+    </svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+:root{
+  --max-width:1100px;
+  --gap:1rem;
+  --bg:#ffffff;
+  --muted:#6b7280;
+  --accent:#ff6a00; /* laranja Shopee-like */
+  --accent-dark:#e55a00;
+  --text:#111827;
+  --radius:12px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  color:var(--text);
+  background:var(--bg);
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+}
+
+/* container */
+.container{width:100%; max-width:var(--max-width); margin:0 auto; padding:1rem}
+
+/* header */
+.site-header{position:sticky; top:0; z-index:40; background:rgba(255,255,255,0.97); border-bottom:1px solid #f1f5f9}
+.header-inner{display:flex; gap:var(--gap); align-items:center; justify-content:space-between}
+.brand{font-weight:700; color:var(--text); text-decoration:none; font-size:1.05rem}
+.brand .accent{color:var(--accent)}
+.nav{display:flex; gap:1rem}
+.nav a{color:var(--muted); text-decoration:none; padding:0.5rem}
+.nav a:hover{color:var(--text)}
+.nav-toggle{display:none; background:transparent; border:0; font-size:1.2rem}
+
+/* hero / search */
+.hero{padding:2.25rem 0}
+.hero-inner{display:grid; grid-template-columns:1fr 420px; gap:1.5rem; align-items:center}
+.hero-text h1{font-size:clamp(1.4rem,3.2vw,2rem); margin:0 0 0.5rem}
+.lead{color:var(--muted); margin-bottom:1rem}
+
+.search-box{display:flex; gap:0.5rem; align-items:center; max-width:520px}
+.search-box input{
+  flex:1; padding:0.8rem 1rem; border-radius:10px; border:1px solid #e6eef8; background:#fff; font-size:1rem;
+  box-shadow:0 6px 18px rgba(15,23,42,0.05);
+}
+.btn{padding:0.65rem 1rem; border-radius:10px; cursor:pointer; font-weight:600; border:0}
+.btn.primary{background:linear-gradient(180deg,var(--accent),var(--accent-dark)); color:white}
+.btn.ghost{background:transparent; color:var(--text); border:1px solid #eef2f7}
+
+/* image */
+.hero-image img{width:100%; height:auto; border-radius:12px; display:block; box-shadow:0 10px 30px rgba(15,23,42,0.06)}
+
+/* sections */
+.section{padding:2rem 0}
+.section.alt{background:#fffaf6}
+h2{margin-top:0}
+
+/* highlights */
+.highlights{list-style:none; padding:0; margin:0.75rem 0 0}
+.highlights li{margin:0.4rem 0; color:var(--muted)}
+
+/* feedback */
+.feedback{margin-top:0.75rem; color:var(--muted)}
+
+/* footer */
+.site-footer{padding:1rem 0; border-top:1px solid #f1f5f9; color:var(--muted)}
+.footer-inner{display:flex; justify-content:space-between; gap:1rem; align-items:center}
+
+/* whatsapp float */
+.whatsapp-float{
+  position:fixed; right:18px; bottom:18px; width:56px; height:56px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center; text-decoration:none; box-shadow:0 6px 20px rgba(0,0,0,0.12);
+  background:linear-gradient(180deg,#25D366,#128C7E); z-index:60;
+}
+.whatsapp-float svg{display:block}
+
+/* accessibility helper */
+.sr-only{position:absolute; left:-10000px; top:auto; width:1px; height:1px; overflow:hidden}
+
+/* responsive */
+@media (max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero-image{order:-1}
+}
+@media (max-width:700px){
+  .nav{display:none}
+  .nav-toggle{display:block}
+}
+
+// Achadinhos Shopee - script
+document.addEventListener('DOMContentLoaded', function(){
+  // year
+  const yearEl = document.getElementById('year');
+  if(yearEl) yearEl.textContent = new Date().getFullYear();
+
+  // product mapping: aqui você adiciona/edita códigos e links da Shopee
+  const productMap = {
+    // códigos como string -> URL
+    "101": "https://s.shopee.com.br/7AVBBBarRo",   // Kit panela feijoada 3 peças
+    "102": "https://s.shopee.com.br/10uXprc0Ga",  // Jogo de Toalhas 5 peças
+    "103": "https://s.shopee.com.br/7AVBBCs7nR"   // Kit garrafas squeeze
+  };
+
+  // elements
+  const input = document.getElementById('codeInput');
+  const btn = document.getElementById('searchBtn');
+  const feedback = document.getElementById('feedback');
+
+  // helper: normalize code (remove espaços)
+  function norm(s){
+    return String(s || "").trim();
+  }
+
+  function showFeedback(msg, isError){
+    feedback.textContent = msg;
+    feedback.style.color = isError ? '#b91c1c' : '#374151';
+  }
+
+  function searchAndRedirect(){
+    const code = norm(input.value);
+    if(!code){
+      showFeedback('Digite um código válido (ex: 101).', true);
+      input.focus();
+      return;
+    }
+    // find exact match
+    if(productMap[code]){
+      showFeedback('Redirecionando para o produto...', false);
+      // slight delay so user sees feedback
+      setTimeout(() => {
+        window.location.href = productMap[code];
+      }, 350);
+      return;
+    }
+
+    // tenta procurar sem zeros à esquerda ou como número
+    const alt = String(Number(code));
+    if(productMap[alt]){
+      showFeedback('Redirecionando para o produto...', false);
+      setTimeout(()=> window.location.href = productMap[alt], 350);
+      return;
+    }
+
+    // não achou: mostra opção de contato
+    showFeedback('Código não encontrado. Se o link estiver vencido, me chama no WhatsApp.', true);
+  }
+
+  btn && btn.addEventListener('click', searchAndRedirect);
+  input && input.addEventListener('keydown', function(e){
+    if(e.key === 'Enter') searchAndRedirect();
+  });
+
+  // small: view all (abre seção sobre)
+  const viewAll = document.getElementById('viewAll');
+  if(viewAll){
+    viewAll.addEventListener('click', function(e){
+      e.preventDefault();
+      document.getElementById('about').scrollIntoView({behavior:'smooth'});
+    });
+  }
+
+  // nav toggle (mobile)
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.nav');
+  if(navToggle){
+    navToggle.addEventListener('click', function(){
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', String(!expanded));
+      if(nav) nav.style.display = expanded ? 'flex' : 'flex';
+      // simple toggle: on very small screens CSS handles visual
+    });
+  }
+});
